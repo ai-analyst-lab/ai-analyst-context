@@ -1,0 +1,14 @@
+dataset_id: novamart-snowflake
+display_name: NovaMart (Snowflake)
+description: Synthetic e-commerce course data; use the existing local AI Analyst connection.
+domain: e-commerce
+connection:
+  type: snowflake
+  authenticator: programmatic_access_token
+  account: $SNOWFLAKE_ACCOUNT
+  user: $SNOWFLAKE_USER
+  token: $SNOWFLAKE_TOKEN
+  warehouse: $SNOWFLAKE_WAREHOUSE
+  database: BOOTCAMP_DB
+  schema: NOVAMART
+  role: $SNOWFLAKE_ROLE
