@@ -15,4 +15,18 @@ These descriptions come from the [AI Analyst NovaMart schema summary](https://gi
 
 The course database and schema are `BOOTCAMP_DB.NOVAMART`. Use the installed ConnectionManager's table_reference method to obtain fully qualified table names from the active connection. Do not assume an unqualified table will resolve correctly.
 
-No team-specific metric definitions are included in this starter.
+Business definitions belong in the applicable guides, not in these physical data descriptions.
+
+## Physical field mappings
+
+These are data descriptions, not team metric definitions. The guide states business meaning;
+a semantic model or query implements it. Confirm these mappings against the connected source
+before approving a calculation. Earlier course inspection is not a new live verification.
+
+- `ORDERS`: `ORDER_ID` identifies an order; `USER_ID` identifies its customer.
+  `ORDER_DATE` is the stored order calendar date used by the existing retention implementation.
+  `STATUS` has the literal completed-order value `completed`; cancelled and returned orders
+  have other statuses. Do not silently substitute a timestamp column for this date.
+- The existing retention model and reviewed-SQL entry (when present) own their parameter
+  handling, physical mappings and data-quality requirements. Their approval is separate
+  from the guide's business review.

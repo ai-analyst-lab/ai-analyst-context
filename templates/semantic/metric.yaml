@@ -1,0 +1,16 @@
+# Defines a calculation using a model's measures and allowed dimensions.
+schema_version: 2
+kind: metric
+id: replace-id
+dataset: novamart-snowflake
+description: Describe the question this resource helps answer.
+owner: Set the responsible team.
+status: draft
+scope: State where this applies and where it does not.
+refs: []
+model: replace-model
+measures: []
+dimensions: []
+predicates: []
+parameters: {}
+output: []

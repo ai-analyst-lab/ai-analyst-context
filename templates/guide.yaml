@@ -1,0 +1,25 @@
+# Business meaning only: not a schema, SQL recipe or executable calculation.
+# Keep physical tables, columns, keys and join rules in dataset documentation or
+# semantic models/relationships; executable expressions belong in metrics or SQL.
+# A plain-language formula (qualifying sessions / all sessions) belongs here.
+schema_version: 2
+kind: guide
+id: replace-id
+dataset: novamart-snowflake
+description: Describe the question this resource helps answer.
+owner: Set the responsible team.
+status: draft
+scope: State where this applies and where it does not.
+refs: []
+# Optional citations to existing company documents; these do not fetch or sync them.
+source_references: []
+# Optional links to existing metric/query IDs, not copies of their implementation.
+# A guide can stand alone; never invent a dependency to fill this list.
+implementations: []
+content: |
+  Explain what the business term means and when this team's definition applies.
+  State who or what counts, qualifying behavior, exclusions, reporting period,
+  numerator and denominator when relevant, and missing/empty-data meaning.
+  Use business language, not physical column names, join keys, SQL or code.
+  Link existing calculations through implementations rather than describing
+  their technical steps here. Do not include evaluation answers or current results.

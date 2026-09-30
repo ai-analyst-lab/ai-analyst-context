@@ -1,0 +1,16 @@
+# Describes rows, columns, dimensions and measures. Metrics reference this model.
+schema_version: 2
+kind: model
+id: replace-id
+dataset: novamart-snowflake
+description: Describe the question this resource helps answer.
+owner: Set the responsible team.
+status: draft
+scope: State where this applies and where it does not.
+refs: []
+table: REPLACE_TABLE
+grain: [REPLACE_KEY]
+columns:
+  REPLACE_KEY: integer
+dimensions: {}
+measures: {}

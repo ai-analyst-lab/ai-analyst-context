@@ -10,3 +10,4 @@ __pycache__/
 working/
 outputs/
 logs/
+.context-history/

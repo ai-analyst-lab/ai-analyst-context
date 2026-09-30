@@ -1,0 +1,16 @@
+# Describe the question answered by the linked SQL; adapting it requires a new review.
+schema_version: 2
+kind: query
+id: replace-id
+dataset: novamart-snowflake
+description: State the question this reviewed SQL answers.
+owner: Set the responsible team.
+status: draft
+scope: State where this applies and where it does not.
+refs: []
+mode: reviewed_sql
+sql: datasets/novamart-snowflake/queries/sql/replace-query.sql
+parameter_order: []
+parameters: {}
+sources: []
+result_columns: []
